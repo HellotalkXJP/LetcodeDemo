@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044E90BF250A1E4D00AD89F9 /* 5.最长回文子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E90BE250A1E4D00AD89F9 /* 5.最长回文子串.swift */; };
+		044E90C1250B664D00AD89F9 /* 6. Z 字形变换.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E90C0250B664D00AD89F9 /* 6. Z 字形变换.swift */; };
+		0476ACCC25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476ACCB25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift */; };
+		0476ACCE2510C1D7002EAE1D /* 9. 回文数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476ACCD2510C1D7002EAE1D /* 9. 回文数.swift */; };
+		0476ACD02511C510002EAE1D /* 10. 正则表达式匹配.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476ACCF2511C510002EAE1D /* 10. 正则表达式匹配.swift */; };
+		0476ACD225130826002EAE1D /* 11. 盛最多水的容器.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476ACD125130826002EAE1D /* 11. 盛最多水的容器.swift */; };
+		047B1C92250F1E9A00CC1181 /* 7. 整数反转.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B1C91250F1E9A00CC1181 /* 7. 整数反转.swift */; };
 		04A195F5250610050037EEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A195F4250610050037EEE2 /* AppDelegate.swift */; };
 		04A195F7250610050037EEE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A195F6250610050037EEE2 /* ViewController.swift */; };
 		04A195FA250610050037EEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A195F8250610050037EEE2 /* Main.storyboard */; };
@@ -15,6 +22,10 @@
 		04A1960A250610080037EEE2 /* LetcodeDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A19609250610080037EEE2 /* LetcodeDemoTests.swift */; };
 		04A19615250610080037EEE2 /* LetcodeDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A19614250610080037EEE2 /* LetcodeDemoUITests.swift */; };
 		04A19623250611100037EEE2 /* LRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A19622250611100037EEE2 /* LRU.swift */; };
+		04A19625250771630037EEE2 /* 2.2个数相加.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A19624250771630037EEE2 /* 2.2个数相加.swift */; };
+		04A1962725077C380037EEE2 /* 1.两数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1962625077C380037EEE2 /* 1.两数之和.swift */; };
+		04A19629250786C70037EEE2 /* 3.无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A19628250786C70037EEE2 /* 3.无重复字符的最长子串.swift */; };
+		04A1962B2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1962A2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		044E90BE250A1E4D00AD89F9 /* 5.最长回文子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5.最长回文子串.swift"; sourceTree = "<group>"; };
+		044E90C0250B664D00AD89F9 /* 6. Z 字形变换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6. Z 字形变换.swift"; sourceTree = "<group>"; };
+		0476ACCB25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8. 字符串转换整数 (atoi).swift"; sourceTree = "<group>"; };
+		0476ACCD2510C1D7002EAE1D /* 9. 回文数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "9. 回文数.swift"; sourceTree = "<group>"; };
+		0476ACCF2511C510002EAE1D /* 10. 正则表达式匹配.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10. 正则表达式匹配.swift"; sourceTree = "<group>"; };
+		0476ACD125130826002EAE1D /* 11. 盛最多水的容器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "11. 盛最多水的容器.swift"; sourceTree = "<group>"; };
+		047B1C91250F1E9A00CC1181 /* 7. 整数反转.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7. 整数反转.swift"; sourceTree = "<group>"; };
 		04A195F1250610050037EEE2 /* LetcodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetcodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A195F4250610050037EEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A195F6250610050037EEE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +67,10 @@
 		04A19614250610080037EEE2 /* LetcodeDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetcodeDemoUITests.swift; sourceTree = "<group>"; };
 		04A19616250610080037EEE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A19622250611100037EEE2 /* LRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRU.swift; sourceTree = "<group>"; };
+		04A19624250771630037EEE2 /* 2.2个数相加.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "2.2个数相加.swift"; sourceTree = "<group>"; };
+		04A1962625077C380037EEE2 /* 1.两数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.两数之和.swift"; sourceTree = "<group>"; };
+		04A19628250786C70037EEE2 /* 3.无重复字符的最长子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.无重复字符的最长子串.swift"; sourceTree = "<group>"; };
+		04A1962A2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4.寻找两个正序数组的中位数.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +124,17 @@
 				04A195F4250610050037EEE2 /* AppDelegate.swift */,
 				04A195F6250610050037EEE2 /* ViewController.swift */,
 				04A19622250611100037EEE2 /* LRU.swift */,
+				04A1962625077C380037EEE2 /* 1.两数之和.swift */,
+				04A19624250771630037EEE2 /* 2.2个数相加.swift */,
+				04A19628250786C70037EEE2 /* 3.无重复字符的最长子串.swift */,
+				04A1962A2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift */,
+				044E90BE250A1E4D00AD89F9 /* 5.最长回文子串.swift */,
+				044E90C0250B664D00AD89F9 /* 6. Z 字形变换.swift */,
+				047B1C91250F1E9A00CC1181 /* 7. 整数反转.swift */,
+				0476ACCB25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift */,
+				0476ACCD2510C1D7002EAE1D /* 9. 回文数.swift */,
+				0476ACCF2511C510002EAE1D /* 10. 正则表达式匹配.swift */,
+				0476ACD125130826002EAE1D /* 11. 盛最多水的容器.swift */,
 				04A195F8250610050037EEE2 /* Main.storyboard */,
 				04A195FB250610080037EEE2 /* Assets.xcassets */,
 				04A195FD250610080037EEE2 /* LaunchScreen.storyboard */,
@@ -259,9 +292,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0476ACCC25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift in Sources */,
 				04A19623250611100037EEE2 /* LRU.swift in Sources */,
+				0476ACD225130826002EAE1D /* 11. 盛最多水的容器.swift in Sources */,
+				044E90C1250B664D00AD89F9 /* 6. Z 字形变换.swift in Sources */,
+				0476ACCE2510C1D7002EAE1D /* 9. 回文数.swift in Sources */,
 				04A195F7250610050037EEE2 /* ViewController.swift in Sources */,
+				04A1962B2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift in Sources */,
+				0476ACD02511C510002EAE1D /* 10. 正则表达式匹配.swift in Sources */,
+				04A19625250771630037EEE2 /* 2.2个数相加.swift in Sources */,
+				044E90BF250A1E4D00AD89F9 /* 5.最长回文子串.swift in Sources */,
+				04A19629250786C70037EEE2 /* 3.无重复字符的最长子串.swift in Sources */,
 				04A195F5250610050037EEE2 /* AppDelegate.swift in Sources */,
+				047B1C92250F1E9A00CC1181 /* 7. 整数反转.swift in Sources */,
+				04A1962725077C380037EEE2 /* 1.两数之和.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +489,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LetcodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -463,7 +507,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.goodjobxjp.com.LetcodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
