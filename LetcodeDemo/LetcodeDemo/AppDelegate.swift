@@ -28,6 +28,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func9()
         func10()
         func11()
+        func12()
+        func13()
+        func14()
+        func15()
+        func16()
+        func17()
+        func18()
+        func19()
+        func20()
         return true
     }
 
@@ -129,10 +138,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func func10() {
-//        let bool = Solution10.isMatch("mississippi", "mis*is*p*.")
+        let bool = Solution10.isMatch("mississippi", "mis*is*p*.")
 //        let bool = Solution10.isMatch("aa", "a*")
 //        let bool = Solution10.isMatch("ab", ".*c")
-        let bool = Solution10.isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*a*a*b")
+//        let bool = Solution10.isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*a*a*b")
         
         
         print("10. 正则表达式匹配 bool:\(bool)")
@@ -141,6 +150,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func func11() {
         let int = Solution11.maxArea([1,8,6,2,5,4,8,3,7])
         print("11. 盛最多水的容器 int:\(int)")
+    }
+    
+    func func12() {
+        let string = Solution12.intToRoman(1994)
+        print("12. 整数转罗马数字 string:\(string)")
+    }
+    
+    func func13() {
+        let int = Solution13.romanToInt("MCMXCIV")
+        print("13. 罗马数字转整数 int:\(int)")
+    }
+    
+    func func14() {
+//        let string = Solution14.longestCommonPrefix(["flower","flow","flight"])
+        let string = Solution14.longestCommonPrefix(["flower","flow","flight"])
+        print("14. 最长公共前缀 string:\(string)")
+    }
+    
+    func func15() {
+        let array = Solution15.threeSum([-1, 0, 1, 2, -1, -4])
+        print("15. 三数之和 array:\(array)")
+    }
+    
+    func func16() {
+        let int = Solution16.threeSumClosest([-1,2,1,-4], 1)
+        print("16. 最接近的三数之和 int:\(int)")
+    }
+    
+    func func17() {
+        let string = Solution17().letterCombinations("23")
+        print("17. 电话号码的字母组合 string:\(string)")
+    }
+    
+    func func18() {
+        let array = Solution18().fourSum([1, 0, -1, 0, -2, 2], 0)
+        print("18. 四数之和 array:\(array)")
+    }
+    
+    func func19() {
+        let node1 = ListNode(1)
+        let node2 = ListNode(2)
+        let node3 = ListNode(3)
+        let node4 = ListNode(4)
+        let node5 = ListNode(5)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        
+        let node = Solution19().removeNthFromEnd(node1, 2)
+        print("19. 删除链表的倒数第N个节点 node:\(node?.description ?? "无链表")")
+    }
+    
+    func func20() {
+        let bool = Solution20().isValid("()[]{}")
+        print("20. 有效的括号 bool:\(bool)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
