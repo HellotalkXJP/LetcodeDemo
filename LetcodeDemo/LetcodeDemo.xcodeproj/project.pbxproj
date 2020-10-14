@@ -11,6 +11,10 @@
 		0440B070251AEEC50001C36E /* 18. 四数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440B06F251AEEC40001C36E /* 18. 四数之和.swift */; };
 		0440B072251B466B0001C36E /* 19. 删除链表的倒数第N个节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440B071251B466B0001C36E /* 19. 删除链表的倒数第N个节点.swift */; };
 		0440B074251C47F90001C36E /* 20. 有效的括号.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440B073251C47F90001C36E /* 20. 有效的括号.swift */; };
+		0440B076251C80160001C36E /* 21. 合并两个有序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440B075251C80160001C36E /* 21. 合并两个有序链表.swift */; };
+		0440B078251DC1680001C36E /* 22. 括号生成.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440B077251DC1680001C36E /* 22. 括号生成.swift */; };
+		0440B07A251DD2C50001C36E /* 23. 合并K个升序链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440B079251DD2C50001C36E /* 23. 合并K个升序链表.swift */; };
+		0440B07C251DEFEC0001C36E /* 24. 两两交换链表中的节点.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0440B07B251DEFEC0001C36E /* 24. 两两交换链表中的节点.swift */; };
 		044E90BF250A1E4D00AD89F9 /* 5.最长回文子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E90BE250A1E4D00AD89F9 /* 5.最长回文子串.swift */; };
 		044E90C1250B664D00AD89F9 /* 6. Z 字形变换.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044E90C0250B664D00AD89F9 /* 6. Z 字形变换.swift */; };
 		0476ACCC25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476ACCB25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift */; };
@@ -23,6 +27,9 @@
 		0476ACDA251495E3002EAE1D /* 15. 三数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476ACD9251495E3002EAE1D /* 15. 三数之和.swift */; };
 		0476ACDC2514B88D002EAE1D /* 16. 最接近的三数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0476ACDB2514B88D002EAE1D /* 16. 最接近的三数之和.swift */; };
 		047B1C92250F1E9A00CC1181 /* 7. 整数反转.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B1C91250F1E9A00CC1181 /* 7. 整数反转.swift */; };
+		04806DF92536CFB600940B42 /* 26. 删除排序数组中的重复项.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04806DF82536CFB600940B42 /* 26. 删除排序数组中的重复项.swift */; };
+		04806DFB2536DE3700940B42 /* 27. 移除元素.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04806DFA2536DE3700940B42 /* 27. 移除元素.swift */; };
+		04806DFD2536E23900940B42 /* 28. 实现 strStr().swift in Sources */ = {isa = PBXBuildFile; fileRef = 04806DFC2536E23900940B42 /* 28. 实现 strStr().swift */; };
 		04A195F5250610050037EEE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A195F4250610050037EEE2 /* AppDelegate.swift */; };
 		04A195F7250610050037EEE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A195F6250610050037EEE2 /* ViewController.swift */; };
 		04A195FA250610050037EEE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A195F8250610050037EEE2 /* Main.storyboard */; };
@@ -35,6 +42,7 @@
 		04A1962725077C380037EEE2 /* 1.两数之和.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1962625077C380037EEE2 /* 1.两数之和.swift */; };
 		04A19629250786C70037EEE2 /* 3.无重复字符的最长子串.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A19628250786C70037EEE2 /* 3.无重复字符的最长子串.swift */; };
 		04A1962B2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A1962A2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift */; };
+		04C75252253461F800B52C03 /* 25. K 个一组翻转链表.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C75251253461F800B52C03 /* 25. K 个一组翻转链表.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,10 @@
 		0440B06F251AEEC40001C36E /* 18. 四数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "18. 四数之和.swift"; sourceTree = "<group>"; };
 		0440B071251B466B0001C36E /* 19. 删除链表的倒数第N个节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "19. 删除链表的倒数第N个节点.swift"; sourceTree = "<group>"; };
 		0440B073251C47F90001C36E /* 20. 有效的括号.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "20. 有效的括号.swift"; sourceTree = "<group>"; };
+		0440B075251C80160001C36E /* 21. 合并两个有序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "21. 合并两个有序链表.swift"; sourceTree = "<group>"; };
+		0440B077251DC1680001C36E /* 22. 括号生成.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "22. 括号生成.swift"; sourceTree = "<group>"; };
+		0440B079251DD2C50001C36E /* 23. 合并K个升序链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "23. 合并K个升序链表.swift"; sourceTree = "<group>"; };
+		0440B07B251DEFEC0001C36E /* 24. 两两交换链表中的节点.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "24. 两两交换链表中的节点.swift"; sourceTree = "<group>"; };
 		044E90BE250A1E4D00AD89F9 /* 5.最长回文子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "5.最长回文子串.swift"; sourceTree = "<group>"; };
 		044E90C0250B664D00AD89F9 /* 6. Z 字形变换.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "6. Z 字形变换.swift"; sourceTree = "<group>"; };
 		0476ACCB25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "8. 字符串转换整数 (atoi).swift"; sourceTree = "<group>"; };
@@ -71,6 +83,9 @@
 		0476ACD9251495E3002EAE1D /* 15. 三数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "15. 三数之和.swift"; sourceTree = "<group>"; };
 		0476ACDB2514B88D002EAE1D /* 16. 最接近的三数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "16. 最接近的三数之和.swift"; sourceTree = "<group>"; };
 		047B1C91250F1E9A00CC1181 /* 7. 整数反转.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "7. 整数反转.swift"; sourceTree = "<group>"; };
+		04806DF82536CFB600940B42 /* 26. 删除排序数组中的重复项.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "26. 删除排序数组中的重复项.swift"; sourceTree = "<group>"; };
+		04806DFA2536DE3700940B42 /* 27. 移除元素.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "27. 移除元素.swift"; sourceTree = "<group>"; };
+		04806DFC2536E23900940B42 /* 28. 实现 strStr().swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "28. 实现 strStr().swift"; sourceTree = "<group>"; };
 		04A195F1250610050037EEE2 /* LetcodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetcodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A195F4250610050037EEE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04A195F6250610050037EEE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +104,7 @@
 		04A1962625077C380037EEE2 /* 1.两数之和.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1.两数之和.swift"; sourceTree = "<group>"; };
 		04A19628250786C70037EEE2 /* 3.无重复字符的最长子串.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "3.无重复字符的最长子串.swift"; sourceTree = "<group>"; };
 		04A1962A2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "4.寻找两个正序数组的中位数.swift"; sourceTree = "<group>"; };
+		04C75251253461F800B52C03 /* 25. K 个一组翻转链表.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "25. K 个一组翻转链表.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +178,14 @@
 				0440B06F251AEEC40001C36E /* 18. 四数之和.swift */,
 				0440B071251B466B0001C36E /* 19. 删除链表的倒数第N个节点.swift */,
 				0440B073251C47F90001C36E /* 20. 有效的括号.swift */,
+				0440B075251C80160001C36E /* 21. 合并两个有序链表.swift */,
+				0440B077251DC1680001C36E /* 22. 括号生成.swift */,
+				0440B079251DD2C50001C36E /* 23. 合并K个升序链表.swift */,
+				0440B07B251DEFEC0001C36E /* 24. 两两交换链表中的节点.swift */,
+				04C75251253461F800B52C03 /* 25. K 个一组翻转链表.swift */,
+				04806DF82536CFB600940B42 /* 26. 删除排序数组中的重复项.swift */,
+				04806DFA2536DE3700940B42 /* 27. 移除元素.swift */,
+				04806DFC2536E23900940B42 /* 28. 实现 strStr().swift */,
 				04A195F8250610050037EEE2 /* Main.storyboard */,
 				04A195FB250610080037EEE2 /* Assets.xcassets */,
 				04A195FD250610080037EEE2 /* LaunchScreen.storyboard */,
@@ -322,21 +346,29 @@
 			files = (
 				0476ACD825135C09002EAE1D /* 14. 最长公共前缀.swift in Sources */,
 				0476ACCC25106D09002EAE1D /* 8. 字符串转换整数 (atoi).swift in Sources */,
+				04806DFB2536DE3700940B42 /* 27. 移除元素.swift in Sources */,
 				0440B06E2519D9560001C36E /* 17. 电话号码的字母组合.swift in Sources */,
 				04A19623250611100037EEE2 /* LRU.swift in Sources */,
 				0476ACD225130826002EAE1D /* 11. 盛最多水的容器.swift in Sources */,
 				0476ACDC2514B88D002EAE1D /* 16. 最接近的三数之和.swift in Sources */,
 				044E90C1250B664D00AD89F9 /* 6. Z 字形变换.swift in Sources */,
 				0476ACCE2510C1D7002EAE1D /* 9. 回文数.swift in Sources */,
+				0440B076251C80160001C36E /* 21. 合并两个有序链表.swift in Sources */,
 				0440B070251AEEC50001C36E /* 18. 四数之和.swift in Sources */,
 				04A195F7250610050037EEE2 /* ViewController.swift in Sources */,
 				0440B072251B466B0001C36E /* 19. 删除链表的倒数第N个节点.swift in Sources */,
 				0476ACDA251495E3002EAE1D /* 15. 三数之和.swift in Sources */,
+				04806DFD2536E23900940B42 /* 28. 实现 strStr().swift in Sources */,
 				04A1962B2508C7440037EEE2 /* 4.寻找两个正序数组的中位数.swift in Sources */,
 				0476ACD02511C510002EAE1D /* 10. 正则表达式匹配.swift in Sources */,
+				04806DF92536CFB600940B42 /* 26. 删除排序数组中的重复项.swift in Sources */,
 				0476ACD6251351DF002EAE1D /* 13. 罗马数字转整数.swift in Sources */,
 				04A19625250771630037EEE2 /* 2.2个数相加.swift in Sources */,
 				044E90BF250A1E4D00AD89F9 /* 5.最长回文子串.swift in Sources */,
+				0440B07C251DEFEC0001C36E /* 24. 两两交换链表中的节点.swift in Sources */,
+				0440B078251DC1680001C36E /* 22. 括号生成.swift in Sources */,
+				0440B07A251DD2C50001C36E /* 23. 合并K个升序链表.swift in Sources */,
+				04C75252253461F800B52C03 /* 25. K 个一组翻转链表.swift in Sources */,
 				04A19629250786C70037EEE2 /* 3.无重复字符的最长子串.swift in Sources */,
 				04A195F5250610050037EEE2 /* AppDelegate.swift in Sources */,
 				047B1C92250F1E9A00CC1181 /* 7. 整数反转.swift in Sources */,

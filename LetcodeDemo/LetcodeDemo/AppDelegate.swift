@@ -37,6 +37,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func18()
         func19()
         func20()
+        func21()
+        func22()
+        func23()
+        func24()
+        func25()
+        func26()
+        func27()
+        func28()
         return true
     }
 
@@ -207,6 +215,98 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func func20() {
         let bool = Solution20().isValid("()[]{}")
         print("20. 有效的括号 bool:\(bool)")
+    }
+    
+    func func21() {
+        let node1 = ListNode(1)
+        let node2 = ListNode(2)
+        let node3 = ListNode(4)
+        
+        let node11 = ListNode(1)
+        let node22 = ListNode(3)
+        let node33 = ListNode(4)
+        
+        node1.next = node2
+        node2.next = node3
+        
+        node11.next = node22
+        node22.next = node33
+        
+        let node = Solution21().mergeTwoLists(node1, node11)
+        print("21. 合并两个有序链表 node:\(node?.description ?? "无链表")")
+    }
+    
+    func func22() {
+        let result = Solution22().generateParenthesis(3)
+        print("22. 括号生成 result:\(result)")
+    }
+    
+    func func23() {
+        let node1 = ListNode(1)
+        let node2 = ListNode(4)
+        let node3 = ListNode(5)
+        
+        let node11 = ListNode(1)
+        let node22 = ListNode(3)
+        let node33 = ListNode(4)
+        
+        let node111 = ListNode(2)
+        let node222 = ListNode(6)
+        
+        node1.next = node2
+        node2.next = node3
+        
+        node11.next = node22
+        node22.next = node33
+        
+        node111.next = node222
+        
+        let node = Solution23().mergeKLists([node1, node11, node111])
+        print("23. 合并K个升序链表 node:\(node?.description ?? "无链表")")
+    }
+    
+    func func24() {
+        let node1 = ListNode(1)
+        let node2 = ListNode(2)
+        let node3 = ListNode(3)
+        let node4 = ListNode(4)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        let node = Solution24().swapPairs(node1)
+        print("24. 两两交换链表中的节点 node:\(node?.description ?? "无链表")")
+    }
+    
+    func func25() {
+        let node1 = ListNode(1)
+        let node2 = ListNode(2)
+        let node3 = ListNode(3)
+        let node4 = ListNode(4)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        let node = Solution25().reverseKGroup(node1, 3)
+        print("25. K 个一组翻转链表 node:\(node?.description ?? "无链表")")
+    }
+    
+    func func26() {
+//        var nums = [1,1,2]
+        var nums = [0,0,2,2,3,3,4]
+        let count = Solution26().removeDuplicates(&nums)
+        print("26. 删除排序数组中的重复项 count:\(count)")
+    }
+    
+    func func27() {
+        var nums = [3,2,2,3]
+        let count = Solution27().removeElement(&nums, 3)
+        print("27. 移除元素 count:\(count)")
+    }
+    
+    func func28() {
+        let int = Solution28().strStr("hello", "ll")
+        print("28. 实现 strStr() int:\(int)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

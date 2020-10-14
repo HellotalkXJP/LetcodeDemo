@@ -20,7 +20,11 @@ public class ListNode: NSObject {
         var description = ""
         var node: ListNode? = self
         while let current = node {
-            description.append("\(current.val) ")
+            description.append("\(current.val)")
+            if current.next != nil {
+                description.append("->")
+            }
+            
             node = current.next
         }
         
