@@ -9,6 +9,15 @@
 import Foundation
 class Solution14 {
     static func longestCommonPrefix(_ strs: [String]) -> String {
+        /*
+         14. 最长公共前缀
+         编写一个函数来查找字符串数组中的最长公共前缀。
+         如果不存在公共前缀，返回空字符串 ""。
+         
+         输入: ["flower","flow","flight"]
+         输出: "fl"
+         **/
+        
         // 纵向扫描
         /*
          ["flower","flow","flight"]
@@ -17,6 +26,19 @@ class Solution14 {
           0  f l o w e r
           1  f l o w
           2  f l i g h t
+         
+         解题思路:
+         // 纵向扫描
+         ["flower","flow","flight"]
+
+         j\i  0  1  2  3  4  5
+          0   f  l  o  w  e  r
+          1   f  l  o  w
+          2   f  l  i  g  h  t
+         把参数数组当成是一个二维数组
+
+         1、当某个数组遍历结束的时候或者不匹配字段的时候退出循环，标记下一次外部循环不用再循环了，直接退出循环
+         2、当内部循环结束，并且字符匹配时，追加字符到maxPrefix中，然后继续下一次循环
          */
         let count = strs.count
         if count <= 0 {

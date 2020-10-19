@@ -45,6 +45,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func26()
         func27()
         func28()
+        func29()
+        func30()
+        func31()
+        func32()
+        func33()
+        func34()
+        func35()
         return true
     }
 
@@ -307,6 +314,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func func28() {
         let int = Solution28().strStr("hello", "ll")
         print("28. 实现 strStr() int:\(int)")
+    }
+    
+    func func29() {
+        let int = Solution29().divide(10, 3)
+        print("29. 两数相除 int:\(int)")
+    }
+    
+    func func30() {
+        let array = Solution30().findSubstring("barfoothefoobarman", ["foo","bar"])
+        print("30. 串联所有单词的子串 array:\(array)")
+    }
+    
+    func func31() {
+        var array = [1, 2, 3]
+        Solution31().nextPermutation(&array)
+        print("31. 下一个排列 array:\(array)")
+    }
+    
+    func func32() {
+        let int = Solution32().longestValidParentheses(")()())")
+        print("32. 最长有效括号 int:\(int)")
+    }
+    
+    func func33() {
+        let int = Solution33().search([4,5,6,7,0,1,2], 0)
+        print("33. 搜索旋转排序数组 int:\(int)")
+    }
+    
+    func func34() {
+        let array = Solution34().searchRange([5,7,7,8,8,10], 8)
+        print("34. 在排序数组中查找元素的第一个和最后一个位置 array:\(array)")
+    }
+    
+    func func35() {
+        let index = Solution35().searchInsert([1,3,5,6], 5)
+        print("35. 搜索插入位置 index:\(index)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

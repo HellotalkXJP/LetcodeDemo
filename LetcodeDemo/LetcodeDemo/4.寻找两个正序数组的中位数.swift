@@ -9,6 +9,18 @@
 import UIKit
 
 class Solution4: NSObject {
+    /*
+     4. 寻找两个正序数组的中位数
+     给定两个大小为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的中位数。
+     输入：nums1 = [1,3], nums2 = [2]
+     输出：2.00000
+     解释：合并数组 = [1,2,3] ，中位数 2
+     
+    解题思路
+
+    1、分别找到第(m+n+1)/2个和(m+n+2)/2个值，相加然后求平均。这样不用去区分m+n数组个数是奇数还是偶数，假设m+n=6，那么(m+n+1)/2 = 3，(m+n+2)/2 = 4，中间值就是(nums[3] + nums[4]) / 2.0,假设m+n=7,(m+n+1)/2 = 4，(m+n+2)/2 = 4，中间值就是(nums[4] + nums[4]) / 2.0，所以找(m+n+1)/2和(m+n+2)/2的值就可以了。
+    2、2分法找k值。用2个下标，i为nums1下标，j为nums2下标。比较2个数组第k/2的值，若value1<value2，则nums1的下标i往后移k/2，反之，nums2的下标j往后移k/2，递归调用。
+    **/
     static func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
         let length1 = nums1.count
         let length2 = nums2.count
