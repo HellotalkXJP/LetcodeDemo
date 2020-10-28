@@ -52,6 +52,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func33()
         func34()
         func35()
+        func36()
+        func37()
+        func38()
+        func39()
+        func40()
+        func41()
+        func42()
+        func43()
+        func44()
+        func45()
+        func46()
+        func47()
         return true
     }
 
@@ -350,6 +362,87 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func func35() {
         let index = Solution35().searchInsert([1,3,5,6], 5)
         print("35. 搜索插入位置 index:\(index)")
+    }
+    
+    func func36() {
+        let result = Solution36().isValidSudoku([
+          ["5","3",".",".","7",".",".",".","."],
+          ["6",".",".","1","9","5",".",".","."],
+          [".","9","8",".",".",".",".","6","."],
+          ["8",".",".",".","6",".",".",".","3"],
+          ["4",".",".","8",".","3",".",".","1"],
+          ["7",".",".",".","2",".",".",".","6"],
+          [".","6",".",".",".",".","2","8","."],
+          [".",".",".","4","1","9",".",".","5"],
+          [".",".",".",".","8",".",".","7","9"]
+        ])
+        print("36. 有效的数独 result:\(result)")
+    }
+    
+    func func37() {
+        var board: [[Character]] = [
+          ["5","3",".",".","7",".",".",".","."],
+          ["6",".",".","1","9","5",".",".","."],
+          [".","9","8",".",".",".",".","6","."],
+          ["8",".",".",".","6",".",".",".","3"],
+          ["4",".",".","8",".","3",".",".","1"],
+          ["7",".",".",".","2",".",".",".","6"],
+          [".","6",".",".",".",".","2","8","."],
+          [".",".",".","4","1","9",".",".","5"],
+          [".",".",".",".","8",".",".","7","9"]
+        ]
+        Solution37().solveSudoku(&board)
+        print("37. 解数独 result:\(board)")
+    }
+    
+    func func38() {
+        let result = Solution38().countAndSay(6)
+        print("38. 外观数列 result:\(result)")
+    }
+    
+    func func39() {
+        let result = Solution39().combinationSum([2,3,6,7], 7)
+        print("39. 组合总和 result:\(result)")
+    }
+    
+    func func40() {
+        let result = Solution40().combinationSum2([10,1,2,7,6,1,5], 8)
+        print("40. 组合总和 II result:\(result)")
+    }
+    
+    func func41() {
+        let result = Solution41().firstMissingPositive([1,2,0])
+        print("41. 缺失的第一个正数 result:\(result)")
+    }
+    
+    func func42() {
+        let result = Solution42().trap([4,2,0,3,2,5])
+        print("42. 接雨水 result:\(result)")
+    }
+    
+    func func43() {
+        let result = Solution43().multiply("123", "456")
+        print("43. 字符串相乘 result:\(result)")
+    }
+    
+    func func44() {
+        let result = Solution44().isMatch("acdcb", "a*c?b")
+        print("44. 通配符匹配 result:\(result)")
+    }
+    
+    func func45() {
+        let result = Solution45().jump([2,3,1,1,4])
+        print("45. 跳跃游戏 II result:\(result)")
+    }
+    
+    func func46() {
+        let result = Solution46().permute([1,2,3])
+        print("46. 全排列 result:\(result)")
+    }
+    
+    func func47() {
+        let result = Solution47().permuteUnique([1, 1, 2])
+        print("47. 全排列 II result:\(result)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
