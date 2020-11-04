@@ -64,6 +64,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func45()
         func46()
         func47()
+        func48()
+        func49()
+        func50()
+        func51()
+        func52()
+        func53()
+        func54()
+        func55()
+        func56()
         return true
     }
 
@@ -443,6 +452,65 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func func47() {
         let result = Solution47().permuteUnique([1, 1, 2])
         print("47. 全排列 II result:\(result)")
+    }
+    
+    func func48() {
+        var matrix =
+        [
+          [1,2,3],
+          [4,5,6],
+          [7,8,9]
+        ]
+        Solution48().rotate(&matrix)
+        print("48. 旋转图像 result:\(matrix)")
+    }
+    
+    func func49() {
+        let result = Solution49().groupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
+        print("49. 字母异位词分组 result:\(result)")
+    }
+    
+    func func50() {
+        let x: Double = 3
+        let n = 5
+        let result = Solution50().myPow(x, n)
+        print("50. Pow(\(x), \(n)) result:\(result)")
+    }
+    
+    func func51() {
+        let result = Solution51().solveNQueens(4)
+        print("51. N 皇后 result:\(result)")
+    }
+    
+    func func52() {
+        let result = Solution52().totalNQueens(4)
+        print("52. N皇后 II result:\(result)")
+    }
+    
+    func func53() {
+        let result = Solution53().maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
+        print("53. 最大子序和 result:\(result)")
+    }
+    
+    func func54() {
+        let matrix = [
+         [ 1, 2, 3 ],
+         [ 4, 5, 6 ],
+         [ 7, 8, 9 ]
+        ]
+        let result = Solution54().spiralOrder(matrix)
+        print("54. 螺旋矩阵 result:\(result)")
+    }
+    
+    func func55() {
+        let result = Solution55().canJump([2,3,1,1,4])
+        print("55. 跳跃游戏 result:\(result)")
+    }
+    
+    func func56() {
+        let intervals = [[1,3],[2,6],[8,10],[15,18]]
+        let result = Solution56().merge(intervals)
+        print("56. 合并区间 result:\(result)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
