@@ -73,6 +73,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func54()
         func55()
         func56()
+        func57()
+        func58()
+        func59()
+        func60()
+        func61()
+        func62()
+        
+        func70()
+        func78()
+        
+        func88()
+        func89()
+        
+        func104()
+        
+        func121()
+        func122()
+        
+        func124()
+        
+        func136()
+        
+        func141()
+//        func142()   // 因为是有环，所以不能打印出来，打印结果的话，会陷入死循环
+        
+        func146()
         return true
     }
 
@@ -89,16 +115,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let node2 = ListNode(9)
         let node3 = ListNode(3)
         
-//        node2.next = node3
-//        node1.next = node2
+        node2.next = node3
+        node1.next = node2
         
         let node11 = ListNode(9)
         let node22 = ListNode(9)
         let node33 = ListNode(4)
         let node44 = ListNode(7)
         
-//        node33.next = node44
-//        node22.next = node33
+        node33.next = node44
+        node22.next = node33
         node11.next = node22
         
         let node = AddTwo.addTwoNumbers(node1, node11)
@@ -513,6 +539,177 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("56. 合并区间 result:\(result)")
     }
     
+    func func57() {
+        let result = Solution57().insert([[1,3],[6,9]], [2,5])
+        print("57. 插入区间 result:\(result)")
+    }
+    
+    func func58() {
+        let result = Solution58().lengthOfLastWord("Hello World")
+        print("58. 最后一个单词的长度 result:\(result)")
+    }
+    
+    func func59() {
+        let result = Solution59().generateMatrix(3)
+        print("59. 螺旋矩阵 II result:\(result)")
+    }
+    
+    func func60() {
+        let result = Solution60().getPermutation(3, 3)
+        print("60. 排列序列 result:\(result)")
+    }
+    
+    func func61() {
+        let node1 = ListNode(1)
+        let node2 = ListNode(2)
+        let node3 = ListNode(3)
+        let node4 = ListNode(4)
+        let node5 = ListNode(5)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        let result = Solution61().rotateRight(node1, 2)
+        print("61. 旋转链表 result:\(result?.description ?? "没有链表")")
+    }
+    
+    func func62() {
+        let result = Solution62().uniquePaths(7, 3)
+        print("62. 不同路径 result:\(result)")
+    }
+    
+    func func63() {
+        
+    }
+    
+    func func64() {
+        
+    }
+    
+    func func70() {
+        let result = Solution70().climbStairs(3)
+        print("70. 爬楼梯 result:\(result)")
+    }
+    
+    func func78() {
+        let result = Solution78().subsets([1, 2, 3])
+        print("78. 子集 result:\(result)")
+    }
+    
+    func func88() {
+        var nums1 = [1,2,3,0,0,0]
+        Solution88().merge(&nums1, 3, [2,5,6], 3)
+        print("88. 合并两个有序数组 result:\(nums1)")
+    }
+    
+    func func89() {
+        let result = Solution89().grayCode(3)
+        print("89. 格雷编码 result:\(result)")
+    }
+    
+    func func104() {
+//        [3,9,20,null,null,15,7]，
+        let node1 = TreeNode(3)
+        let node2 = TreeNode(9)
+        let node3 = TreeNode(20)
+        let node4 = TreeNode(15)
+        let node5 = TreeNode(7)
+        node1.left = node2
+        node1.right = node3
+        
+        node3.left = node4
+        node3.right = node5
+        
+        let result = Solution104().maxDepth(node1)
+        print("104. 二叉树的最大深度 result:\(result)")
+    }
+    
+    func func121() {
+        let result = Solution121().maxProfit([7,1,5,3,6,4])
+        print("121. 买卖股票的最佳时机 result:\(result)")
+    }
+    
+    func func122() {
+        let result = Solution122().maxProfit([7,1,5,3,6,4])
+        print("122. 买卖股票的最佳时机 II result:\(result)")
+    }
+    
+    func func124() {
+        // [-10,9,20,null,null,15,7]
+        let node1 = TreeNode(-10)
+        let node2 = TreeNode(9)
+        let node3 = TreeNode(20)
+        let node4 = TreeNode(15)
+        let node5 = TreeNode(7)
+        node1.left = node2
+        node1.right = node3
+        
+        node3.left = node4
+        node3.right = node5
+        let result = Solution124().maxPathSum(node1)
+        print("124. 二叉树中的最大路径和 result:\(result)")
+    }
+    
+    func func136() {
+        let result = Solution136().singleNumber([4,1,2,1,2])
+        print("136. 只出现一次的数字 result:\(result)")
+    }
+    
+    func func141() {
+        let node1 = ListNode(3)
+        let node2 = ListNode(2)
+        let node3 = ListNode(0)
+        let node4 = ListNode(-4)
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node2
+            
+        let result = Solution141().hasCycle(node1)
+        print("141. 环形链表 result:\(result)")
+    }
+    
+    func func142() {
+        let node1 = ListNode(3)
+        let node2 = ListNode(2)
+        let node3 = ListNode(0)
+        let node4 = ListNode(-4)
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node2
+        
+        let result = Solution142().detectCycle(node1)
+        print("142. 环形链表 II result:\(result?.description ?? "无环形链表")")
+    }
+    
+    func func146() {
+        let lRUCache = LRUCache(2)
+//        lRUCache.put(1, 1); // 缓存是 {1=1}
+//        lRUCache.put(2, 2); // 缓存是 {1=1, 2=2}
+//        print("146. LRU缓存机制 lRUCache.get(1):\(lRUCache.get(1))") // 返回 1
+//
+//        lRUCache.put(3, 3); // 该操作会使得关键字 2 作废，缓存是 {1=1, 3=3}
+//        print("146. LRU缓存机制 lRUCache.get(2):\(lRUCache.get(2))") // 返回 -1 (未找到)
+//        lRUCache.put(4, 4); // 该操作会使得关键字 1 作废，缓存是 {4=4, 3=3}
+//        print("146. LRU缓存机制 lRUCache.get(1):\(lRUCache.get(1))") // 返回 返回 -1 (未找到)
+//        print("146. LRU缓存机制 lRUCache.get(3):\(lRUCache.get(3))") // 返回 3
+//        print("146. LRU缓存机制 lRUCache.get(4):\(lRUCache.get(4))") // 返回 4
+        
+        
+        lRUCache.put(2, 1); // 缓存是 {2=1}
+        lRUCache.put(2, 2); // 缓存是 {2=2}
+        print("146. LRU缓存机制 lRUCache.get(2):\(lRUCache.get(2))") // 返回 2
+        
+        lRUCache.put(1, 1); // 该操作会使得关键字 2 作废，缓存是 {1=1, 2=2}
+//        print("146. LRU缓存机制 lRUCache.get(2):\(lRUCache.get(2))") // 返回 -1 (未找到)
+        lRUCache.put(4, 1); // 该操作会使得关键字 1 作废，缓存是 {4=1, 1=1}
+        print("146. LRU缓存机制 lRUCache.get(2):\(lRUCache.get(2))") // 返回 返回 -1 (未找到)
+//        print("146. LRU缓存机制 lRUCache.get(3):\(lRUCache.get(3))") // 返回 3
+//        print("146. LRU缓存机制 lRUCache.get(4):\(lRUCache.get(4))") // 返回 4
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -536,5 +733,72 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+}
+
+
+/// Definition for a list node.
+public class ListNode: NSObject {
+    public var val: Int
+    public var next: ListNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.next = nil
+    }
+    
+    public override var description: String {
+        var description = ""
+        var node: ListNode? = self
+        while let current = node {
+            description.append("\(current.val)")
+            if current.next != nil {
+                description.append("->")
+            }
+            
+            node = current.next
+        }
+        
+        return description
+    }
+}
+
+/// Definition for a binary tree node.
+public class TreeNode: NSObject {
+    public var val: Int
+    public var left: TreeNode?
+    public var right: TreeNode?
+    public init(_ val: Int) {
+        self.val = val
+        self.left = nil
+        self.right = nil
+    }
+    
+    public override var description: String {
+        var description = ""
+        description.append("\(val)")
+        var level = [TreeNode]()
+        level.append(self)
+        
+        while level.count != 0 {
+            var nextLevel = [TreeNode]()
+            for tree in level {
+                if let left = tree.left {
+                    nextLevel.append(left)
+                    description.append("->\(left.val)")
+                } else {
+                    description.append("->null")
+                }
+                if let right = tree.right {
+                    nextLevel.append(right)
+                    description.append("->\(right.val)")
+                } else {
+                    description.append("->null")
+                }
+            }
+            
+            level = nextLevel
+        }
+        
+        return description
+    }
 }
 

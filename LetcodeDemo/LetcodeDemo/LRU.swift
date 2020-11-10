@@ -157,6 +157,8 @@ class Cache: NSObject {
         
         if let node = lru.dict[key] {
             // 存在节点，则把节点移到头部
+            // 如果值不相等，则把新值替换进去
+            node.value = value
             lru.moveNodeToHead(node)
         } else {
             // 不存在节点，则插入新的节点
