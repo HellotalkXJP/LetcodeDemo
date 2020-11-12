@@ -99,6 +99,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        func142()   // 因为是有环，所以不能打印出来，打印结果的话，会陷入死循环
         
         func146()
+        func148()
+        
+        func155()
+        
+        func160()
+        
+        func169()
+        
+        func206()
+        
+        func215()
+        
+        func217()
+        
+        func230()
         return true
     }
 
@@ -708,6 +723,98 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("146. LRU缓存机制 lRUCache.get(2):\(lRUCache.get(2))") // 返回 返回 -1 (未找到)
 //        print("146. LRU缓存机制 lRUCache.get(3):\(lRUCache.get(3))") // 返回 3
 //        print("146. LRU缓存机制 lRUCache.get(4):\(lRUCache.get(4))") // 返回 4
+    }
+    
+    func func148() {
+        let node1 = ListNode(-1)
+        let node2 = ListNode(5)
+        let node3 = ListNode(3)
+        let node4 = ListNode(4)
+        let node5 = ListNode(0)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        let result = Solution148().sortList(node1)
+        print("148. 排序链表 result:\(result?.description ?? "无排序链表")")
+    }
+    
+    func func155() {
+        let minStack = MinStack()
+        minStack.push(-2)
+        minStack.push(0)
+        minStack.push(-3)
+        print("155. 最小栈 minStack.getMin() --> \(minStack.getMin())")    // 返回 -3.
+        minStack.pop()
+        print("155. 最小栈 minStack.top() --> \(minStack.top())")   // 返回 0.
+        print("155. 最小栈 minStack.getMin() --> \(minStack.getMin())")   // 返回 -2.
+    }
+    
+    func func160() {
+        let headA = ListNode(0)
+        let node2 = ListNode(9)
+        let node3 = ListNode(1)
+        let node4 = ListNode(2)
+        let node5 = ListNode(4)
+        
+        headA.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        
+        let headB = ListNode(3)
+        let node44 = ListNode(2)
+        let node55 = ListNode(4)
+        headB.next = node44
+        node44.next = node55
+        
+        let result = Solution160().getIntersectionNode(headA, headB)
+        print("160. 相交链表 result:\(result?.description ?? "无相交链表")")
+    }
+    
+    func func169() {
+        let result = Solution169().majorityElement([2,2,1,1,1,2,2])
+        print("169. 多数元素 result:\(result)")
+    }
+    
+    func func206() {
+        let node1 = ListNode(1)
+        let node2 = ListNode(2)
+        let node3 = ListNode(3)
+        let node4 = ListNode(4)
+        let node5 = ListNode(5)
+        
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        
+        let result = Solution206().reverseList(node1)
+        print("206. 反转链表 result:\(result?.description ?? "无链表")")
+    }
+    
+    func func215() {
+        let result = Solution215().findKthLargest([3,2,1,5,6,4], 2)
+        print("215. 数组中的第K个最大元素 result:\(result)")
+    }
+    
+    func func217() {
+        let result = Solution217().containsDuplicate([1,2,3,1])
+        print("217. 存在重复元素 result:\(result)")
+    }
+    
+    func func230() {
+        let node1 = TreeNode(3)
+        let node2 = TreeNode(1)
+        let node3 = TreeNode(4)
+        let node4 = TreeNode(2)
+        node1.left = node2
+        node1.right = node3
+        node2.right = node4
+        
+        let result = Solution230().kthSmallest(node1, 4)
+        print("230. 二叉搜索树中第K小的元素 result:\(result)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
