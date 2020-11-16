@@ -8,7 +8,7 @@
 
 import Foundation
 class Solution16 {
-    static func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
+    func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
         // [-1,2,1,-4]   1
         /*
          16. 最接近的三数之和

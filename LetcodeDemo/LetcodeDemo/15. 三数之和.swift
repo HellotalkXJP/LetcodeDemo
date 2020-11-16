@@ -29,7 +29,7 @@ class Solution15 {
      4、如果newNums[left] + newNums[right]小于目标值，说明sum要增大，则left右移
      5、循环结束，返回结果。
      **/
-    static func threeSum(_ nums: [Int]) -> [[Int]] {
+    func threeSum(_ nums: [Int]) -> [[Int]] {
         // [-1, 0, 1, 2, -1, -4]
         // a + b + c = 0 => a + b = -c
 //        let nums = [0,0,0,0]

@@ -8,7 +8,7 @@
 
 import Foundation
 class Solution12 {
-    static func intToRoman(_ num: Int) -> String {
+    func intToRoman(_ num: Int) -> String {
         /*
          12. 整数转罗马数字
          罗马数字包含以下七种字符： I， V， X， L，C，D 和 M。

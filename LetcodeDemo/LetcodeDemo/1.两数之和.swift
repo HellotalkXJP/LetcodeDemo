@@ -9,7 +9,7 @@
 import Foundation
 
 class Solution1 {
-    static func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var dic = [Int: Int]()
         for (i, num) in nums.enumerated() {
             let num1 = target - num

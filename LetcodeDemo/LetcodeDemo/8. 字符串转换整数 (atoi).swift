@@ -9,7 +9,7 @@
 import Foundation
 
 class Solution8 {
-    static func myAtoi(_ str: String) -> Int {
+    func myAtoi(_ str: String) -> Int {
         /*
          8. 字符串转换整数 (atoi)
          请你来实现一个 atoi 函数，使其能将字符串转换成整数。

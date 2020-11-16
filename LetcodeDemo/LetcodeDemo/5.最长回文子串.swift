@@ -18,7 +18,7 @@ class Solution5 {
      
      
      **/
-    static func longestPalindrome(_ s: String) -> String {
+    func longestPalindrome(_ s: String) -> String {
         let array = convertArray(s)
         
         var maxString = ""
@@ -63,7 +63,7 @@ class Solution5 {
         }
     }
     
-    static func convertArray(_ s: String) -> Array<String> {
+    func convertArray(_ s: String) -> Array<String> {
         var array = [String]()
         for char in s {
             array.append("#")

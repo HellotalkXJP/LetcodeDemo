@@ -114,13 +114,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func217()
         
         func230()
+        func231()
+        
+        func235()
+        func236()
+        func237()
+        func238()
+        
+        func292()
+        
+        func344()
+        
+        func557()
         return true
     }
 
     // 1、两数之和
     func func1() {
-        let arr = Solution1.twoSum([2, 7, 11, 15], 9)
-        
+        let arr = Solution1().twoSum([2, 7, 11, 15], 9)
         print("1. 两数之和arr = \(arr)")
     }
     
@@ -142,7 +153,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         node22.next = node33
         node11.next = node22
         
-        let node = AddTwo.addTwoNumbers(node1, node11)
+        let node = Solution2().addTwoNumbers(node1, node11)
         
         print("2. 2个数相加node = \(node?.description ?? "测试")")
     }
@@ -171,19 +182,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // 3. 无重复字符的最长子串
     func func3() {
-        let length = Solution3.lengthOfLongestSubstring("abcabcbb")
+        let length = Solution3().lengthOfLongestSubstring("abcabcbb")
         
         print("3. 无重复字符的最长子串 length: \(length)")
     }
     
     func func4() {
-        let double = Solution4.findMedianSortedArrays([1, 2], [3, 4])
+        let double = Solution4().findMedianSortedArrays([1, 2], [3, 4])
         print("4. 寻找两个正序数组的中位数 double:\(double)")
     }
     
     func func5() {
         //输入，并处理得到字符串s
-        let string = Solution5.longestPalindrome("babad")
+        let string = Solution5().longestPalindrome("babad")
         
         print("5. 最长回文子串 string:\(string)")
     }
@@ -191,31 +202,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func func6() {
 //        let string = Solution6.convert("LEETCODEISHIRING", 3)
         
-        let string = Solution6.convert("AB", 1)
+        let string = Solution6().convert("AB", 1)
         
         print("6. Z 字形变换 string:\(string)")
     }
     
     func func7() {
-        let int = Solution7.reverse(123)
+        let int = Solution7().reverse(123)
         
         print("7. 整数反转 int:\(int)")
     }
     
     func func8() {
-        let int = Solution8.myAtoi("321")
+        let int = Solution8().myAtoi("321")
         
         print("8. 字符串转换整数 (atoi) int:\(int)")
     }
     
     func func9() {
-        let bool = Solution9.isPalindrome(3443)
+        let bool = Solution9().isPalindrome(3443)
         
         print("9. 回文数 bool:\(bool)")
     }
     
     func func10() {
-        let bool = Solution10.isMatch("mississippi", "mis*is*p*.")
+        let bool = Solution10().isMatch("mississippi", "mis*is*p*.")
 //        let bool = Solution10.isMatch("aa", "a*")
 //        let bool = Solution10.isMatch("ab", ".*c")
 //        let bool = Solution10.isMatch("aaaaaaaaaaaaab", "a*a*a*a*a*a*a*a*a*a*a*a*b")
@@ -225,33 +236,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func func11() {
-        let int = Solution11.maxArea([1,8,6,2,5,4,8,3,7])
+        let int = Solution11().maxArea([1,8,6,2,5,4,8,3,7])
         print("11. 盛最多水的容器 int:\(int)")
     }
     
     func func12() {
-        let string = Solution12.intToRoman(1994)
+        let string = Solution12().intToRoman(1994)
         print("12. 整数转罗马数字 string:\(string)")
     }
     
     func func13() {
-        let int = Solution13.romanToInt("MCMXCIV")
+        let int = Solution13().romanToInt("MCMXCIV")
         print("13. 罗马数字转整数 int:\(int)")
     }
     
     func func14() {
 //        let string = Solution14.longestCommonPrefix(["flower","flow","flight"])
-        let string = Solution14.longestCommonPrefix(["flower","flow","flight"])
+        let string = Solution14().longestCommonPrefix(["flower","flow","flight"])
         print("14. 最长公共前缀 string:\(string)")
     }
     
     func func15() {
-        let array = Solution15.threeSum([-1, 0, 1, 2, -1, -4])
+        let array = Solution15().threeSum([-1, 0, 1, 2, -1, -4])
         print("15. 三数之和 array:\(array)")
     }
     
     func func16() {
-        let int = Solution16.threeSumClosest([-1,2,1,-4], 1)
+        let int = Solution16().threeSumClosest([-1,2,1,-4], 1)
         print("16. 最接近的三数之和 int:\(int)")
     }
     
@@ -815,6 +826,103 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let result = Solution230().kthSmallest(node1, 4)
         print("230. 二叉搜索树中第K小的元素 result:\(result)")
+    }
+    
+    func func231() {
+        let result = Solution231().isPowerOfTwo(16)
+        print("231. 2的幂 result:\(result)")
+    }
+    
+    func func235() {
+        let node1 = TreeNode(6)
+        let node2 = TreeNode(2)
+        let node3 = TreeNode(8)
+        let node4 = TreeNode(0)
+        let node5 = TreeNode(4)
+        let node6 = TreeNode(7)
+        let node7 = TreeNode(9)
+        let node8 = TreeNode(3)
+        let node9 = TreeNode(5)
+        node1.left = node2
+        node1.right = node3
+        node2.left = node4
+        node2.right = node5
+        node3.left = node6
+        node3.right = node7
+        node5.left = node8
+        node5.right = node9
+        
+        let result = Solution235().lowestCommonAncestor(node1, node2, node3)
+        print("235. 二叉搜索树的最近公共祖先 result:\(result?.description ?? "无公共祖先")")
+    }
+    
+    func func236() {
+        let node1 = TreeNode(1)
+        let node2 = TreeNode(2)
+        let node3 = TreeNode(3)
+        let node4 = TreeNode(4)
+        let node5 = TreeNode(5)
+        let node6 = TreeNode(6)
+        let node7 = TreeNode(7)
+        let node8 = TreeNode(8)
+        let node9 = TreeNode(9)
+        let node10 = TreeNode(10)
+        let node11 = TreeNode(11)
+        let node12 = TreeNode(12)
+        let node13 = TreeNode(13)
+        let node14 = TreeNode(14)
+        let node15 = TreeNode(15)
+        node1.left = node2
+        node1.right = node3
+        node2.left = node4
+        node2.right = node5
+        node3.left = node6
+        node3.right = node7
+        node4.left = node8
+        node4.right = node9
+        node5.left = node10
+        node5.right = node11
+        node6.left = node12
+        node6.right = node13
+        node7.left = node14
+        node7.right = node15
+        let result = Solution236().lowestCommonAncestor(node1, node9, node11)
+        print("236. 二叉树的最近公共祖先 result:\(result?.description ?? "无公共祖先")")
+    }
+    
+    func func237() {
+        var node1 = ListNode(1)
+        let node2 = ListNode(2)
+        let node3 = ListNode(3)
+        let node4 = ListNode(4)
+        let node5 = ListNode(5)
+        node1.next = node2
+        node2.next = node3
+        node3.next = node4
+        node4.next = node5
+        Solution237().deleteNode(&node1)
+        print("237. 删除链表中的节点 result:\(node1.description)")
+    }
+    
+    func func238() {
+        let result = Solution238().productExceptSelf([1,2,3,4])
+        print("238. 除自身以外数组的乘积 result:\(result)")
+    }
+    
+    func func292() {
+        let result = Solution292().canWinNim(4)
+        print("292. Nim 游戏 result:\(result)")
+    }
+    
+    func func344() {
+        var result: [Character] = ["h","e","l","l","o"]
+        Solution344().reverseString(&result)
+        print("344. 反转字符串 result:\(result)")
+    }
+    
+    func func557() {
+        let result = Solution557().reverseWords("Let's take LeetCode contest")
+        print("557. 反转字符串中的单词 III result:\(result)")
     }
     
     func applicationWillResignActive(_ application: UIApplication) {

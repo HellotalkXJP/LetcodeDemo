@@ -8,8 +8,8 @@
 
 import Foundation
 
-class AddTwo: NSObject {
-    static func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
+class Solution2: NSObject {
+    func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         var l11: ListNode? = l1
         var l22: ListNode? = l2
         

@@ -18,7 +18,7 @@ class Solution6 {
      E   D   H   N
      之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如："LCIRETOESIIGEDHN"。
      **/
-    static func convert(_ s: String, _ numRows: Int) -> String {
+    func convert(_ s: String, _ numRows: Int) -> String {
         /*
         LEETCODEISHIRING
          
