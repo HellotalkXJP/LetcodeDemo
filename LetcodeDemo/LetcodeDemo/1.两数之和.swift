@@ -13,7 +13,7 @@ class Solution1 {
         var dic = [Int: Int]()
         for (i, num) in nums.enumerated() {
             let num1 = target - num
-            if dic.keys.contains(num1), let index = dic[num1] {
+            if let index = dic[num1] {
                 return [index, i]
             }
             dic[num] = i

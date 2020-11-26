@@ -72,4 +72,56 @@ class Solution5 {
         array.append("#")
         return array
     }
+    
+    // 动态规划
+    /*
+     dp对角线为true
+     dp[i][j] = s[i] == s[j] && dp[i+1][j-1]
+     当dp[i][j]==true时，计算出j-i+1回文子串的长度，比较maxLength，更新记录起始start以及maxLength，最后输出最大回文子串
+     
+        babad
+        b   a   b   a   d
+     b  T   F   T   F   F
+     a      F   F   T   F
+     b          T   F   F
+     a              T   F
+     d                  T
+     
+     **/
+    func longestPalindrome1(_ s: String) -> String {
+        if s.count < 2 {
+            return s
+        }
+        let count = s.count
+        var dp = Array(repeating: Array(repeating: false, count: count), count: count)
+        for i in 0..<count {
+            dp[i][i] = true
+        }
+        
+        var start = 0
+        var maxLength = 1
+        for j in 1..<count {
+            let s1 = s[s.index(s.startIndex, offsetBy: j)]
+            for i in 0..<j {
+                let s2 = s[s.index(s.startIndex, offsetBy: i)]
+                if s1 != s2 {
+                    dp[i][j] = false
+                } else {
+                    if j - i < 3 {
+                        // 当s1==s2时，如果j-i<3，可以赋值true
+                        dp[i][j] = true
+                    } else {
+                        dp[i][j] = dp[i+1][j-1]
+                    }
+                }
+                
+                if dp[i][j] && j - i + 1 > maxLength {
+                    maxLength = j - i + 1
+                    start = i
+                }
+            }
+        }
+        
+        return String(s[s.index(s.startIndex, offsetBy: start)...s.index(s.startIndex, offsetBy: start + maxLength - 1)])
+    }
 }

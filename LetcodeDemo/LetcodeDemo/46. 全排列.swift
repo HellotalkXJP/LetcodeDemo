@@ -57,7 +57,7 @@ class Solution46 {
                 dfs(nums, depth + 1, path, used, &result)
                 
                 used[i] = false
-                path.remove(at: path.count - 1)
+                path.removeLast()
                 print("递归之后 ===》\(path)")
             }
         }

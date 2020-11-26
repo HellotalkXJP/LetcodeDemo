@@ -28,6 +28,8 @@ class Solution33 {
          3、循环以上步骤，直接结束
          4、返回结果
          **/
+        let nums = [4,5,6,7,0,1,2]
+        let target = 0
         let count = nums.count
         if count == 0 {
             return -1
@@ -50,7 +52,7 @@ class Solution33 {
                     right = mid - 1
                 }
             } else {
-                // nums[mid] > target ==> 左半部分有序
+                // nums[mid] > nums[right] ==> 左半部分有序
                 if target >= nums[left] && target < nums[mid] {
                     // 在左半部分区域
                     right = mid - 1

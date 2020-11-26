@@ -39,14 +39,19 @@ class Solution78 {
     
     func dfs(_ index: Int, _ nums: [Int], _ temp: [Int] , _ result: inout [[Int]]) {
         if index == nums.count {
+            print("结果 temp:\(temp)")
             result.append(temp)
             return
         }
         
         var temp = temp
         temp.append(nums[index])
+//        print("递归前1 temp:\(temp)")
         dfs(index+1, nums, temp, &result)
+//        print("递归后1 temp:\(temp)")
         temp.removeLast()
+//        print("递归前2 temp:\(temp)")
         dfs(index+1, nums, temp, &result)
+//        print("递归后2 temp:\(temp)")
     }
 }

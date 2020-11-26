@@ -197,6 +197,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let string = Solution5().longestPalindrome("babad")
         
         print("5. 最长回文子串 string:\(string)")
+        
+        let string2 = Solution5().longestPalindrome1("babad")
+        print("5. 最长回文子串 string:\(string2)")
     }
     
     func func6() {
